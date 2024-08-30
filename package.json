@@ -1,0 +1,50 @@
+{
+  "name": "vanilla-prime",
+  "version": "1.0.0",
+  "description": "A simpler, more sustainable way of web development",
+  "keywords": [
+    "css",
+    "dom",
+    "html",
+    "vanilla",
+    "web"
+  ],
+  "author": "Morris Brodersen <mb@morrisbrodersen.de>",
+  "license": "ISC",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "bash scripts/build.sh",
+    "clean": "bash scripts/clean.sh",
+    "dev": "bash scripts/dev.sh",
+    "format": "prettier . --write",
+    "format-check": "prettier . --check",
+    "lint": "eslint .",
+    "lint-css": "stylelint src/css/*.scss",
+    "test": "playwright test --project Chromium",
+    "test-coverage": "bash scripts/test-coverage.sh",
+    "test-e2e": "playwright test",
+    "test-ui": "playwright test --ui",
+    "vendor": "bash scripts/vendor.sh"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.9.0",
+    "@playwright/test": "^1.30.0",
+    "@types/eslint__js": "^8.42.3",
+    "@types/node": "^20.14.9",
+    "c8": "^10.1.2",
+    "cbst": "^2.0.0",
+    "eslint": "^9.9.0",
+    "exdom": "^2.0.0",
+    "prettier": "^3.0.2",
+    "s4d": "^0.2.0",
+    "sass": "^1.58.3",
+    "stylelint": "^16.7.0",
+    "stylelint-config-standard-scss": "^13.1.0",
+    "terser": "^5.31.1",
+    "typescript": "^5.0.4",
+    "typescript-eslint": "^8.2.0"
+  }
+}
